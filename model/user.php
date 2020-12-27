@@ -77,3 +77,19 @@ class user extends person
         }
         return false;
     }
+    
+        private function getUserAsaText()
+    {
+        return $this->email.' '.$this->password.' '.$this->name.' '.$this->number.PHP_EOL;
+    }
+
+    public function IsEmailExist()
+    {
+        $paramTypes = "s";
+        $Parameters = array($this->email);
+        $result = database::ExecuteQuery('IsUsernameExist', $paramTypes, $Parameters);
+
+        if(mysqli_num_rows($result) > 0)
+              return true;
+        return false;
+    }
