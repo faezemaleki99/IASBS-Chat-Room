@@ -61,3 +61,19 @@ class user extends person
     {
         $this->password = md5($password);
     }
+
+        function checkUserPass()
+    {
+        $paramTypes = "ss";
+        $Parameters = array($this->email, $this->password);
+        $result = database::ExecuteQuery('CheckUserPass', $paramTypes, $Parameters);
+
+        if(mysqli_num_rows($result) > 0)
+        {
+            $row = $result->fetch_array();
+            $this->setName($row["name"]);
+            $this->setNumber($row["number"]);
+            return true;
+        }
+        return false;
+    }
