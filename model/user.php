@@ -93,3 +93,16 @@ class user extends person
               return true;
         return false;
     }
+
+        function Save()
+    {
+        if(!$this->IsEmailExist()) {
+            $paramTypes = "ssss";
+            $Parameters = array($this->email, $this->password,
+                $this->name, $this->number);
+            database::ExecuteQuery('AddUser', $paramTypes, $Parameters);
+            return true;
+        }
+        return false;
+    }
+}
