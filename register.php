@@ -23,3 +23,9 @@
         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" required>
       </div>
     </div>
+	<div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="number">Number:</label>
+      <div class="col-sm-5">
+        <input type="text" class="form-control" id="number" placeholder="Enter number" name="number" required>
+      </div>
+    </div>
