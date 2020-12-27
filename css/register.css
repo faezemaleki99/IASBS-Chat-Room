@@ -1,1 +1,16 @@
-
+h2{
+color:white;
+  }
+label{
+  color:white;
+  }
+.container {
+    margin-top: 5%;
+    width: 50%;
+    background-color: #26262b9e;
+    padding-top:2%;
+    padding-bottom:2%;
+  }
+.btn-primary {
+    background-color: #673AB7;
+}
