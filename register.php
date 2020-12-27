@@ -29,3 +29,11 @@
         <input type="text" class="form-control" id="number" placeholder="Enter number" name="number" required>
       </div>
     </div>
+	  
+        <div class="form-group">
+      <label class="control-label col-sm-2 col-sm-offset-2" for="name">Address:</label>
+	  
+      <div class="col-sm-5">
+        <textarea class="form-control" id="address" placeholder="Enter Address" name="address" required></textarea>
+      </div>
+    </div>
