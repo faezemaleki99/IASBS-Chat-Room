@@ -36,3 +36,28 @@ abstract class person
         $this->address = $address;
     }
 }
+
+class user extends person
+{
+    private $email;
+    private $password;
+
+    function getEmail()
+    {
+        return $this->email;
+    }
+
+    public function setEmail($email)
+    {
+        $this->email = $email;
+    }
+
+    function getPassword()
+    {
+        return $this->password;
+    }
+
+    function setPassword($password)
+    {
+        $this->password = md5($password);
+    }
