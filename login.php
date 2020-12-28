@@ -21,3 +21,7 @@
 		}
 	}
 ?>
+
+<div class="container">
+  <center><h2>Login form</h2></center></br>
+  <form class="form-horizontal" method="post" action="">
