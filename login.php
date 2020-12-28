@@ -15,3 +15,9 @@
 			$_SESSION['name'] = $row['name'];
 			header('Location: home.php');
 		}
+		else
+		{
+			echo "<script> alert('Invalid Email or Password.'); </script>";
+		}
+	}
+?>
