@@ -25,3 +25,10 @@
 <div class="container">
   <center><h2>Login form</h2></center></br>
   <form class="form-horizontal" method="post" action="">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email">Email:</label>
+	  
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+      </div>
+    </div>
