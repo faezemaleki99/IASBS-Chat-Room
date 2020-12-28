@@ -38,3 +38,13 @@
         <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password">
       </div>
     </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="submit" class="btn btn-primary">Login</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
