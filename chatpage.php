@@ -45,3 +45,29 @@
 <?php
 	} 
 ?>
+	  
+	  
+</div>
+  <form class="form-horizontal" method="post" action="sendMessage.php">
+    <div class="form-group">
+      <div class="col-sm-10">          
+        <textarea name="msg" class="form-control" placeholder="Type your message here..."></textarea>
+      </div>
+	         
+      <div class="col-sm-2">
+        <button type="submit" class="btn btn-primary">Send</button>
+      </div>
+
+    </div>
+  </form>
+</div>
+
+</body>
+</html>
+<?php
+	}
+	else
+	{
+		header('location:index.php');
+	}
+?>
