@@ -15,3 +15,33 @@
 	<label>Join the chat</label>
   </center></br>
   <div class="display-chat">
+	  
+	  
+<?php
+    if(mysqli_num_rows($query)>0) {
+	    
+	    while($row= mysqli_fetch_assoc($query)) {	
+		
+?>
+
+	<div class="message">
+		<p>
+			<span><?php echo $row['name']; ?> :</span>
+			<?php echo $row['message']; ?>
+			</p>
+		</div>
+	  
+<?php
+		}
+	}
+	else
+	{
+?>
+<div class="message">
+	<p>
+		No previous chat available.
+	        </p>
+</div>
+<?php
+	} 
+?>
