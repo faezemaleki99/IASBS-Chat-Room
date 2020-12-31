@@ -15,3 +15,16 @@ abstract class database
         }
         return $connection;
     }
+
+    private static function PrepareParameters($ParamTypes, $Parameters)
+    {
+        $inputArray[] = &$ParamTypes;
+        $j = count($Parameters);
+        $ParameterQuestionMarks = "";
+        for($i=0;$i<$j;$i++){
+            $inputArray[] = &$Parameters[$i];
+            $ParameterQuestionMarks.='?,';
+        }
+
+        return array("ParameterQuestionMarks"=>$ParameterQuestionMarks, "inputArray"=>$inputArray);
+    }
