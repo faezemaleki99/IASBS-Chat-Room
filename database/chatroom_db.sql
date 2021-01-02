@@ -18,7 +18,9 @@ CREATE TABLE IF NOT EXISTS `register` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 ALTER TABLE `chat`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  KEY `to` (`to`),
+  KEY `from` (`from`);
 
 ALTER TABLE `register`
   ADD PRIMARY KEY (`id`);
