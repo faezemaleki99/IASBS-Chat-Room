@@ -20,3 +20,7 @@ ALTER TABLE `chat`
 
 ALTER TABLE `register`
   ADD PRIMARY KEY (`id`);
+
+
+ALTER TABLE `chat`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
