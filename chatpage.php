@@ -57,6 +57,10 @@
       <div class="col-sm-2">
         <button type="submit" class="btn btn-primary">Send</button>
       </div>
+	    
+      <div class="col-sm-2>">
+	 <button type= "submit" class="btn btn-primary">Delete</button>
+      </div>
 
     </div>
   </form>
