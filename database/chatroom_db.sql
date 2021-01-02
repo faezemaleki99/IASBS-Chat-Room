@@ -1,9 +1,8 @@
 CREATE TABLE IF NOT EXISTS `chat` (
-  `id` int(11) NOT NULL,
+  `rid` int(11) NOT NULL,
+  `sid` int(11) NOT NULL,
   `name` varchar(255) DEFAULT NULL,
   `message` text,
-  `from` int(10) unsigned NOT NULL,
-  `to` int(10) unsigned NOT NULL,
   `created_on` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -18,7 +17,7 @@ CREATE TABLE IF NOT EXISTS `register` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 ALTER TABLE `chat`
-  ADD PRIMARY KEY (`id`),
+  ADD PRIMARY KEY (`sid`,'rid','created_on'),
   KEY `to` (`to`),
   KEY `from` (`from`);
 
