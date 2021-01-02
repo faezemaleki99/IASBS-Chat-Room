@@ -24,3 +24,6 @@ ALTER TABLE `register`
 
 ALTER TABLE `chat`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  
+  ALTER TABLE `register`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
