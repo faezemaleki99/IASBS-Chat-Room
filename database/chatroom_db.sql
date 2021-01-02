@@ -17,3 +17,6 @@ CREATE TABLE IF NOT EXISTS `register` (
 
 ALTER TABLE `chat`
   ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `register`
+  ADD PRIMARY KEY (`id`);
