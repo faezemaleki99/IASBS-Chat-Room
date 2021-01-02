@@ -1,2 +1,3 @@
 # IASBS-Chat-Room
 Simple Chat Room
+in this project we tried to implement a simple chat room using php html css and jquery with functionalities like registration,loging in and out ,sending masseges, showing chats,showing masseges,deleting masseges, choosing a profile picture(not working).for the main structure of the project we used and adjusted the framework used in class and applied a few changes.we were unable to implement the rest of the remaining sections of the project.during implementation we face d many challenges concerning the database and creating relation between pages and choosing methods to move and transport variables and results to next steps of each process.designing the database and designing tables and relation was also a bit of challenge.
