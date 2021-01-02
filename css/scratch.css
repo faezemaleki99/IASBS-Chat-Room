@@ -1,0 +1,11 @@
+.reciever{
+    left:0%;
+    background: whitesmoke;
+    padding: 5px;
+}
+.sender{
+    right:0%;
+    background: palegreen;
+    padding: 5px;
+    
+}
